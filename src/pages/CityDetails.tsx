@@ -2,9 +2,8 @@ import { useParams } from "react-router-dom";
 import BrowseOfficeWrapper from "../wrappers/BrowseOfficeWrapper";
 import { useState } from "react";
 import type { City } from "../types/type";
-import OfficeCard from "../components/OfficeCard";
 import Navbar from "../components/Navbar";
-import { mockCities, mockOffices } from "../data/mockData";
+import { mockCities } from "../data/mockData";
 
 export default function CityDetails() {
   const { slug } = useParams<{ slug: string }>();
@@ -61,7 +60,7 @@ export default function CityDetails() {
           >
             {/* Ambil path langsung dari mock */}
             <img
-              src={city.photo.replace("public", "")}
+              src={city.photo}
               className="w-full h-full object-cover"
               alt="hero background"
             />
@@ -69,16 +68,13 @@ export default function CityDetails() {
         </section>
       </header>
 
+
       <section
         id="Fresh-Space"
         className="flex flex-col gap-[30px] w-full max-w-[1130px] mx-auto mb-[120px]"
       >
 
-        <BrowseOfficeWrapper>
-          {city.officeSpaces.map((office) => (
-            <OfficeCard key={office.id} office={office} />
-          ))}
-        </BrowseOfficeWrapper>
+        <BrowseOfficeWrapper/>
 
       </section>
     </>

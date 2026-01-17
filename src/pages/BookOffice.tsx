@@ -7,7 +7,6 @@ import { bookingSchema } from "../types/validationBooking";
 import { mockOffices } from "../data/mockData";
 
 export default function BookOffice() {
-  const Base_Url = "" // Tidak perlu jika pakai public path
   const { slug } = useParams<{ slug: string }>()
   const [office, setOffice] = useState<Office | null>(null)
   const [formData, setFormData] = useState({

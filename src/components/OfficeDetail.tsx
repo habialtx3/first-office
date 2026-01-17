@@ -21,13 +21,23 @@ export default function OfficeDetail() {
             .catch((error) => {
                 setError(error)
             })
-            .finally(()=>{
+            .finally(() => {
                 setLoading(false)
             })
     }, [slug])
 
-    console.log(office)
+    if (loading) {
+        return <p className="text-center mt-10">Loading...</p>
+    }
 
+    if (error) {
+        return <p className="text-center mt-10 text-red-500">{error}</p>
+    }
+
+    if (!office) {
+        return <p className="text-center mt-10">Office tidak ditemukan</p>
+    }
+    
     return (
         <>
             <section id="Gallery" className="-mb-[50px]">

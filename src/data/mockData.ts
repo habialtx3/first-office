@@ -5,7 +5,7 @@ export const mockCities: City[] = [
     id: 1,
     name: "Jakarta",
     slug: "jakarta",
-    photo: "assets/images/cities/jakarta.jpg",
+    photo: "/assets/images/cities/jakarta.jpg",
     officeSpaces_count: 2,
     officeSpaces: [],
   },
@@ -13,7 +13,7 @@ export const mockCities: City[] = [
     id: 2,
     name: "Bandung",
     slug: "bandung",
-    photo: "assets/images/cities/bandung.jpg",
+    photo: "/assets/images/cities/bandung.jpg",
     officeSpaces_count: 1,
     officeSpaces: [],
   },
@@ -27,13 +27,13 @@ export const mockOffices: Office[] = [
     name: "Startup Hub Sudirman",
     slug: "startup-hub-sudirman",
     address: "Jl. Jendral Sudirman No. 10, Jakarta",
-    thumbnail: "assets/images/offices/office-1.jpg",
+    thumbnail: "/assets/images/offices/office-1.jpg",
     city: mockCities[0],
     about:
       "Startup Hub Sudirman adalah coworking space modern dengan fasilitas lengkap.",
     photo: [
-      { id: 1, photo: "assets/images/offices/office-1-1.jpg" },
-      { id: 2, photo: "assets/images/offices/office-1-2.jpg" },
+      { id: 1, photo: "/assets/images/offices/office-1-1.jpg" },
+      { id: 2, photo: "/assets/images/offices/office-1-2.jpg" },
     ],
     benefit: [
       { id: 1, name: "Free WiFi" },
@@ -48,13 +48,13 @@ export const mockOffices: Office[] = [
     name: "Creative Space SCBD",
     slug: "creative-space-scbd",
     address: "SCBD Lot 8, Jakarta",
-    thumbnail: "assets/images/offices/office-2.jpg",
+    thumbnail: "/assets/images/offices/office-2.jpg",
     city: mockCities[0],
     about:
       "Creative Space SCBD cocok untuk tim kreatif dengan lokasi strategis.",
     photo: [
-      { id: 3, photo: "assets/images/offices/office-2-1.jpg" },
-      { id: 4, photo: "assets/images/offices/office-2-2.jpg" },
+      { id: 3, photo: "/assets/images/offices/office-2-1.jpg" },
+      { id: 4, photo: "/assets/images/offices/office-2-2.jpg" },
     ],
     benefit: [
       { id: 4, name: "24/7 Access" },
@@ -68,12 +68,12 @@ export const mockOffices: Office[] = [
     name: "Digital Nomad Bandung",
     slug: "digital-nomad-bandung",
     address: "Jl. Dago No. 88, Bandung",
-    thumbnail: "assets/images/offices/office-3.jpg",
+    thumbnail: "/assets/images/offices/office-3.jpg",
     city: mockCities[1],
     about:
       "Coworking space nyaman di Bandung dengan suasana tenang.",
     photo: [
-      { id: 5, photo: "assets/images/offices/office-3-1.jpg" },
+      { id: 5, photo: "/assets/images/offices/office-3-1.jpg" },
     ],
     benefit: [
       { id: 6, name: "High Speed Internet" },
