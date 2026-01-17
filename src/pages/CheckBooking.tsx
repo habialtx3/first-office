@@ -52,10 +52,19 @@ export default function CheckBooking() {
     <>
       <Navbar />
       <section className="relative flex flex-col w-[930px] mt-10 shrink-0 gap-[30px] mx-auto mb-[100px] z-20">
+        <p className="text-center text-gray-500">
+          Try testing with TRX ID <strong>TRX-202601-001</strong> and Phone Number <strong>81234567890</strong>
+        </p>
+        <p className="text-center text-gray-500 mb-4">
+          Or Try testing with TRX ID <strong>TRX-202601-002</strong> and Phone Number <strong>81122334455</strong> for pending
+        </p>
         <form
           onSubmit={handleSubmit}
           className="flex items-end rounded-[20px] border border-[#E0DEF7] p-[30px] gap-[16px] bg-white"
         >
+
+
+
           {/* TRX ID */}
           <div className="flex flex-col w-full gap-2">
             <label htmlFor="booking_trx_id" className="font-semibold">Booking TRX ID</label>
@@ -75,6 +84,7 @@ export default function CheckBooking() {
               <p className="text-red-500">Booking transaction id is required</p>
             )}
           </div>
+
 
           {/* Phone Number */}
           <div className="flex flex-col w-full gap-2">
